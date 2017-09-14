@@ -15,14 +15,16 @@
       <file leaf-file-name="Grid.cs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Grid.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="9" column="24" lean-forward="false" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+            <state relative-caret-position="760">
               <folding>
-                <marker date="1505134602186" expanded="true" signature="53:426" ph="{...}" />
-                <marker date="1505134602186" expanded="true" signature="128:155" ph="{...}" />
-                <marker date="1505134602186" expanded="true" signature="209:424" ph="{...}" />
-                <marker date="1505134602186" expanded="true" signature="247:421" ph="{...}" />
-                <marker date="1505134602186" expanded="true" signature="287:417" ph="{...}" />
+                <marker date="1505400314018" expanded="true" signature="6:52" ph="..." />
+                <marker date="1505400314018" expanded="true" signature="87:1157" ph="{...}" />
+                <marker date="1505400314018" expanded="true" signature="219:294" ph="{...}" />
+                <marker date="1505400314018" expanded="true" signature="364:769" ph="{...}" />
+                <marker date="1505400314018" expanded="true" signature="404:741" ph="{...}" />
+                <marker date="1505400314018" expanded="true" signature="446:737" ph="{...}" />
+                <marker date="1505400314018" expanded="true" signature="810:1155" ph="{...}" />
+                <marker date="1505400314018" expanded="true" signature="891:1131" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -31,12 +33,13 @@
       <file leaf-file-name="Square.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Square.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="14" column="8" lean-forward="true" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+            <state relative-caret-position="152">
+              <caret line="8" column="23" lean-forward="false" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
               <folding>
-                <marker date="1505133883738" expanded="true" signature="55:205" ph="{...}" />
-                <marker date="1505133883738" expanded="true" signature="162:169" ph="{...}" />
-                <marker date="1505133883738" expanded="true" signature="196:203" ph="{...}" />
+                <marker date="1505399720117" expanded="true" signature="6:74" ph="..." />
+                <marker date="1505399720117" expanded="true" signature="111:253" ph="{...}" />
+                <marker date="1505399720117" expanded="true" signature="199:251" ph="{...}" />
+                <marker date="1505399720117" expanded="true" signature="216:248" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -136,7 +139,49 @@
       <envs />
       <method />
     </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
+      <node-interpreter value="project" />
+      <working-dir value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
     <configuration default="true" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui />
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
       <method />
     </configuration>
     <configuration default="false" name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug">
@@ -164,7 +209,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4951000" />
+      <workItem from="1505200458111" duration="4348000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -208,70 +253,134 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Grid.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1505134602186" expanded="true" signature="53:426" ph="{...}" />
-            <marker date="1505134602186" expanded="true" signature="128:155" ph="{...}" />
-            <marker date="1505134602186" expanded="true" signature="209:424" ph="{...}" />
-            <marker date="1505134602186" expanded="true" signature="247:421" ph="{...}" />
-            <marker date="1505134602186" expanded="true" signature="287:417" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Grid.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1505134602186" expanded="true" signature="53:426" ph="{...}" />
-            <marker date="1505134602186" expanded="true" signature="128:155" ph="{...}" />
-            <marker date="1505134602186" expanded="true" signature="209:424" ph="{...}" />
-            <marker date="1505134602186" expanded="true" signature="247:421" ph="{...}" />
-            <marker date="1505134602186" expanded="true" signature="287:417" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/gridgeneration.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/gridgeneration.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Square.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Square.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
-          <caret line="12" column="8" lean-forward="true" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
-          <folding />
+          <caret line="12" column="12" lean-forward="true" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+          <folding>
+            <marker date="1505399720117" expanded="true" signature="6:74" ph="..." />
+            <marker date="1505399720117" expanded="true" signature="111:253" ph="{...}" />
+            <marker date="1505399720117" expanded="true" signature="199:251" ph="{...}" />
+            <marker date="1505399720117" expanded="true" signature="216:248" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Grid.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="23" column="32" lean-forward="true" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
+          <folding>
+            <marker date="1505400314018" expanded="true" signature="6:52" ph="..." />
+            <marker date="1505400314018" expanded="true" signature="87:1157" ph="{...}" />
+            <marker date="1505400314018" expanded="true" signature="219:294" ph="{...}" />
+            <marker date="1505400314018" expanded="true" signature="364:769" ph="{...}" />
+            <marker date="1505400314018" expanded="true" signature="404:741" ph="{...}" />
+            <marker date="1505400314018" expanded="true" signature="446:737" ph="{...}" />
+            <marker date="1505400314018" expanded="true" signature="810:1155" ph="{...}" />
+            <marker date="1505400314018" expanded="true" signature="891:1131" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Square.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="8" lean-forward="true" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+        <state relative-caret-position="76">
+          <caret line="4" column="16" lean-forward="false" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
           <folding>
-            <marker date="1505133883738" expanded="true" signature="55:205" ph="{...}" />
-            <marker date="1505133883738" expanded="true" signature="162:169" ph="{...}" />
-            <marker date="1505133883738" expanded="true" signature="196:203" ph="{...}" />
+            <marker date="1505399720117" expanded="true" signature="6:74" ph="..." />
+            <marker date="1505399720117" expanded="true" signature="111:253" ph="{...}" />
+            <marker date="1505399720117" expanded="true" signature="199:251" ph="{...}" />
+            <marker date="1505399720117" expanded="true" signature="216:248" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Grid.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="24" lean-forward="false" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+        <state relative-caret-position="380">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding>
-            <marker date="1505134602186" expanded="true" signature="53:426" ph="{...}" />
-            <marker date="1505134602186" expanded="true" signature="128:155" ph="{...}" />
-            <marker date="1505134602186" expanded="true" signature="209:424" ph="{...}" />
-            <marker date="1505134602186" expanded="true" signature="247:421" ph="{...}" />
-            <marker date="1505134602186" expanded="true" signature="287:417" ph="{...}" />
+            <marker date="1505400314018" expanded="true" signature="6:52" ph="..." />
+            <marker date="1505400314018" expanded="true" signature="87:1157" ph="{...}" />
+            <marker date="1505400314018" expanded="true" signature="219:294" ph="{...}" />
+            <marker date="1505400314018" expanded="true" signature="364:769" ph="{...}" />
+            <marker date="1505400314018" expanded="true" signature="404:741" ph="{...}" />
+            <marker date="1505400314018" expanded="true" signature="446:737" ph="{...}" />
+            <marker date="1505400314018" expanded="true" signature="810:1155" ph="{...}" />
+            <marker date="1505400314018" expanded="true" signature="891:1131" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Grid.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1505400314018" expanded="true" signature="6:52" ph="..." />
+            <marker date="1505400314018" expanded="true" signature="87:1157" ph="{...}" />
+            <marker date="1505400314018" expanded="true" signature="219:294" ph="{...}" />
+            <marker date="1505400314018" expanded="true" signature="364:769" ph="{...}" />
+            <marker date="1505400314018" expanded="true" signature="404:741" ph="{...}" />
+            <marker date="1505400314018" expanded="true" signature="446:737" ph="{...}" />
+            <marker date="1505400314018" expanded="true" signature="810:1155" ph="{...}" />
+            <marker date="1505400314018" expanded="true" signature="891:1131" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Grid.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1505400314018" expanded="true" signature="6:52" ph="..." />
+            <marker date="1505400314018" expanded="true" signature="87:1157" ph="{...}" />
+            <marker date="1505400314018" expanded="true" signature="219:294" ph="{...}" />
+            <marker date="1505400314018" expanded="true" signature="364:769" ph="{...}" />
+            <marker date="1505400314018" expanded="true" signature="404:741" ph="{...}" />
+            <marker date="1505400314018" expanded="true" signature="446:737" ph="{...}" />
+            <marker date="1505400314018" expanded="true" signature="810:1155" ph="{...}" />
+            <marker date="1505400314018" expanded="true" signature="891:1131" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/gridgeneration.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/gridgeneration.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Square.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Square.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="23" lean-forward="false" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+          <folding>
+            <marker date="1505399720117" expanded="true" signature="6:74" ph="..." />
+            <marker date="1505399720117" expanded="true" signature="111:253" ph="{...}" />
+            <marker date="1505399720117" expanded="true" signature="199:251" ph="{...}" />
+            <marker date="1505399720117" expanded="true" signature="216:248" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Grid.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="760">
+          <folding>
+            <marker date="1505400314018" expanded="true" signature="6:52" ph="..." />
+            <marker date="1505400314018" expanded="true" signature="87:1157" ph="{...}" />
+            <marker date="1505400314018" expanded="true" signature="219:294" ph="{...}" />
+            <marker date="1505400314018" expanded="true" signature="364:769" ph="{...}" />
+            <marker date="1505400314018" expanded="true" signature="404:741" ph="{...}" />
+            <marker date="1505400314018" expanded="true" signature="446:737" ph="{...}" />
+            <marker date="1505400314018" expanded="true" signature="810:1155" ph="{...}" />
+            <marker date="1505400314018" expanded="true" signature="891:1131" ph="{...}" />
           </folding>
         </state>
       </provider>

@@ -1,17 +1,18 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using System.Xml.Xsl;
+using UnityEngine;
 
 public class Square : MonoBehaviour
 {
-	public int row;
-	public int number;
-	[SerializeField] 
-	private bool _isBomb;
-	
-	private void Start () {
-		
-	}
-	
-	private void Update () {
-		
+	public float row;
+	public float number;
+	public bool isBomb;
+
+	public void OnClick()
+	{
+		if (isBomb)
+		{
+			print("game over.");
+		}
 	}
 }
