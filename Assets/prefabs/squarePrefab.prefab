@@ -19,6 +19,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4873083462829584}
+  - component: {fileID: 61632574251090618}
   - component: {fileID: 212111754499488068}
   - component: {fileID: 114540094528694776}
   m_Layer: 0
@@ -41,6 +42,31 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &61632574251090618
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1534519810341966}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.7, y: 0.7}
+    newSize: {x: 0.21, y: 0.21}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.7, y: 0.7}
+  m_EdgeRadius: 0
 --- !u!114 &114540094528694776
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -52,9 +78,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62ebff5961c91d64cb742428d8dd0599, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  row: 0
-  number: 0
-  _isBomb: 0
+  _numberSprites:
+  - {fileID: 21300000, guid: e08e52d1e27d49d41876e025eb35dd0f, type: 3}
+  - {fileID: 21300000, guid: 0ab99a4652a275f4a9a0f7f6bd408c8f, type: 3}
+  - {fileID: 21300000, guid: 84c8149a4329c3545a30aa619a1e1c3b, type: 3}
+  - {fileID: 21300000, guid: c8b8831382151554b83d4e2b38f6ab33, type: 3}
+  - {fileID: 21300000, guid: e70f6b626ca63104cb4fec4728b1ef92, type: 3}
+  - {fileID: 21300000, guid: 269f971bb1c22804ea97faef2dd4f762, type: 3}
+  - {fileID: 21300000, guid: 5e947c3cdf8b9fe499479732a2b339a3, type: 3}
+  - {fileID: 21300000, guid: cf4f5e974ad85fc40af549eb3341889e, type: 3}
+  - {fileID: 21300000, guid: 34fcf31f461c1db4f92289ce5195610b, type: 3}
+  _bombSprite: {fileID: 21300000, guid: 91793716f8d58d7489d2e9a25be20a26, type: 3}
+  isBomb: 0
 --- !u!212 &212111754499488068
 SpriteRenderer:
   m_ObjectHideFlags: 1

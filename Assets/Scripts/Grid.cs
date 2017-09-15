@@ -5,7 +5,7 @@ public class Grid : MonoBehaviour
 {
 	[SerializeField] 
 	private Square _squarePrefab;
-	private List<Square> _squarelist = new List<Square>();
+	public Square[,] squareArray;
 	
 	private void Start()
 	{
@@ -15,36 +15,46 @@ public class Grid : MonoBehaviour
 	
 	private void GenerateGrid (int yCount, int xCount, int bombCount) 
 	{
+		squareArray = new Square[xCount,yCount];
+		
 		for (float x = 0; x < xCount; x++)
 		{
 			for (float y = 0; y < yCount; y++)
 			{
 				//Create the tile.
-				var tile = Instantiate(_squarePrefab, new Vector2(x,y), transform.rotation);
-				tile.row = y;
-				tile.number = x;
-				tile.transform.position = new Vector3(x*0.7f,y*0.7f, 0);
+				var tile = Instantiate(_squarePrefab, new Vector2(x, y), transform.rotation);
+				//tile.row = y;
+				//tile.number = x;
+				tile.transform.position = new Vector3(x * 0.7f, y * 0.7f, 0);
 				//put square in the list
-				_squarelist[(int)(y * x) + (int) x] = tile;
+				squareArray[(int)x, (int)y] = tile;
 			}
 		}
-		PlaceBombs(bombCount);
+		PlaceBombs(bombCount,xCount,yCount);
 	}
 
-	private void PlaceBombs(int bombCount)
+	private void PlaceBombs(int bombCount,int numberAmount,int rowAmount)
 	{
 		var bombAmount = 0;
-		var tileNumber = -1;
+		var currentRow = -1;
+		var currentNumber = -1;
+		//while there are less then the given amount of bombs
 		while (bombAmount < bombCount)
 		{
-			tileNumber++;
-			if (tileNumber > _squarelist.Count)
-				tileNumber = 0;
+			//move to next tile.
+			currentNumber++;
+			currentRow++;
+			if (currentNumber > numberAmount - 1)
+			{
+				currentNumber = 0;
+				currentRow++;
+			}
+			if (currentRow > rowAmount -1)
+				currentRow = 0;
 			//Decide to make a bomb, if true make it a bomb.
-			if (Random.Range(0, 100) >= 20) continue;
-			_squarelist[tileNumber].isBomb = true;
+			if (Random.Range(0, 100) >= 20 || squareArray[currentNumber,currentRow].isBomb) continue;
+			squareArray[currentNumber,currentRow].isBomb = true;
 			bombAmount++;
 		}
-		print(bombAmount);
 	}
 }
