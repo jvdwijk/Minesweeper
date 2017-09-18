@@ -88,9 +88,9 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 5e947c3cdf8b9fe499479732a2b339a3, type: 3}
   - {fileID: 21300000, guid: cf4f5e974ad85fc40af549eb3341889e, type: 3}
   - {fileID: 21300000, guid: 34fcf31f461c1db4f92289ce5195610b, type: 3}
+  - {fileID: 21300000, guid: 5afa0110fc7cb9d44871e161706c0173, type: 3}
   _bombSprite: {fileID: 21300000, guid: 91793716f8d58d7489d2e9a25be20a26, type: 3}
   _flagSprite: {fileID: 21300000, guid: c0cdbb2461c7cb444bd637e3a01e973a, type: 3}
-  _basicSprite: {fileID: 21300000, guid: 5afa0110fc7cb9d44871e161706c0173, type: 3}
   isChecked: 0
   isBomb: 0
   number: 0

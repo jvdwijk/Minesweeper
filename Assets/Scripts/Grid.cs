@@ -6,6 +6,7 @@ public class Grid : MonoBehaviour
 	public Square[,] squareArray;
 	private int _width;
 	private int _height;
+	private int _initialBombCount;
 	public bool gameDone;
 	
 	private void Start()
@@ -13,11 +14,12 @@ public class Grid : MonoBehaviour
 		GenerateGrid(16,30,99);
 	}
 	
-	private void GenerateGrid (int yCount, int xCount, int bombCount) 
+	public void GenerateGrid (int yCount, int xCount, int bombCount) 
 	{
 		squareArray = new Square[xCount,yCount];
 		_width = xCount;
 		_height = yCount;
+		_initialBombCount = bombCount;
 		
 		for (float x = 0; x < xCount; x++)
 		{
@@ -32,26 +34,26 @@ public class Grid : MonoBehaviour
 				squareArray[(int)x, (int)y] = tile;
 			}
 		}
-		PlaceBombs(bombCount,xCount,yCount);
+		PlaceBombs();
 	}
 
-	private void PlaceBombs(int bombCount,int numberAmount,int rowAmount)
+	private void PlaceBombs()
 	{
 		var bombAmount = 0;
 		var currentRow = -1;
 		var currentNumber = -1;
 		//while there are less then the given amount of bombs
-		while (bombAmount < bombCount)
+		while (bombAmount < _initialBombCount)
 		{
 			//move to next tile.
 			currentNumber++;
 			currentRow++;	
-			if (currentNumber > numberAmount - 1)
+			if (currentNumber > _width - 1)
 			{
 				currentNumber = 0;
 				currentRow++;
 			}
-			if (currentRow > rowAmount -1)
+			if (currentRow > _height -1)
 				currentRow = 0;
 			//Decide to make a bomb, if true make it a bomb.
 			if (Random.Range(0, 100) >= 20 || squareArray[currentNumber,currentRow].isBomb) continue;
@@ -62,7 +64,7 @@ public class Grid : MonoBehaviour
 	
 	public void FloodFilling(int x, int y)
 	{
-		if (x < 0 || x > _width || y < 0 || y > _height || squareArray[x,y].isChecked)
+		if (x < 0 || x >= _width || y < 0 || y >= _height || squareArray[x,y].isChecked)
 			return;
 		
 		squareArray[x, y].ChooseSprite(CheckArea(x,y));
@@ -75,7 +77,7 @@ public class Grid : MonoBehaviour
 		{
 			for (var j = -1; j < 2; j++)
 			{
-				if (i == 0 && j == 0) return;
+				if (i == 0 && j == 0) continue;
 				FloodFilling(x + i, y + j);
 			}
 		}
@@ -88,22 +90,58 @@ public class Grid : MonoBehaviour
 		{
 			for (var j = -1; j < 2; j++)
 			{
-				if (i == 0 && j == 0) continue;
-				if (CheckTile(x + i, y + j)) ++bombCount;
+				if (!CheckTile(x + i, y + j)) continue;
+				bombCount++;
+				if (i == 0 && j == 0) return 9;
 			}
 		}
-
 		return bombCount;
 	}
 	
 	private bool CheckTile(int x, int y)
 	{
-		if (x < 0 || x > _width || y < 0 || y > _height) return false;
+		if (x < 0 || x >= _width || y < 0 || y >= _height || squareArray[x, y].isChecked) return false;
 		return squareArray[x, y].isBomb;
 	}
 	
-	public void RevealBombs() {
+	public int FindBombs(bool reveal)
+	{
+		var bombCount = 0;
 		foreach (var tile in squareArray)
-			if (tile.isBomb) tile.ChooseSprite(0);
+		{
+			if (!tile.isBomb) continue;
+			bombCount++;
+			if(reveal) tile.ChooseSprite(0);
+		}
+		return bombCount;
+	}
+
+	public void Reset()
+	{
+		gameDone = false;
+		foreach (var tile in squareArray)
+		{
+			tile.isBomb = false;
+			tile.ChooseSprite(9);
+		}
+		PlaceBombs();
+	}
+
+	public void CheckFlags()
+	{
+		var bombCount = 0;
+		foreach (var tile in squareArray)
+		{
+			if(!tile.isFlagged) continue;
+			if (tile.isBomb) bombCount++;
+			else
+			{
+				gameDone = true;
+				FindBombs(true);
+			}
+		}
+		if (bombCount >= _initialBombCount) return;
+		gameDone = true;
+		FindBombs(true);
 	}
 }

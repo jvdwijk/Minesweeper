@@ -1,14 +1,14 @@
-﻿	using UnityEngine;
-	
+﻿using UnityEngine;
+using UnityEngine.UI;
+
 	public class Square : MonoBehaviour
 	{
 		//the sprites used
 		[SerializeField] private Sprite[] _numberSprites;
 		[SerializeField] private Sprite _bombSprite;
-		[SerializeField] private Sprite _flagSprite;
-		[SerializeField] private Sprite _basicSprite;
+		[SerializeField] private Sprite _flagSprite;	
 		//Booleans used
-		private bool _isFlagged;
+		public bool isFlagged = false;
 		public bool isChecked;
 		public bool isBomb;
 		//The main Grid.
@@ -27,17 +27,15 @@
 			if(_grid.gameDone) return;
 			if (Input.GetKey(KeyCode.LeftShift))
 			{
-				print(_isFlagged);
-				_isFlagged = _isFlagged ? false : true;
-				ChangeSprite(_isFlagged ? _basicSprite : _flagSprite);
+				print(isFlagged);
+				isFlagged = !isFlagged;
+				ChangeSprite(isFlagged ? _flagSprite : _numberSprites[9]);
 				return;
 			}
-			if(_isFlagged) return;
+			if(isFlagged) return;
 			if (isBomb)
 			{
-				_grid.gameDone = true;
-				_grid.RevealBombs();
-				ChangeSprite(_bombSprite);
+				EndGame();
 				return;
 			}
 			
@@ -55,5 +53,11 @@
 		public void ChooseSprite(int spriteNumber)
 		{
 			ChangeSprite(isBomb ? _bombSprite : _numberSprites[spriteNumber]);
+		}
+
+		private void EndGame()
+		{
+			_grid.gameDone = true;
+			_grid.FindBombs(true);
 		}
 	}
